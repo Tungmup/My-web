@@ -1,0 +1,106 @@
+<! DOCTYPE html>
+<html>
+<body background="C:\Users\HP\OneDrive\Desktop\nguồn\nền gỗ 2.jpg">
+	<h1 style="text-align: center;"> Luật chơi Renju </h1>
+	<p style="margin-left: 90px; margin-right: 150px; font-size: 120%">
+	Renju là biến thể gomoku duy nhất được công nhận và có thi đấu chuyên nghiệp,
+	với luật thi đấu rất phức tạp để hạn chế ưu thế của bên đi trước.
+	Luật của trò chơi này (luật swap2-luật phổ biến nhất trong thi đấu chuyên nghiệp) có thể được đơn giản hóa như sau:
+	</p>
+	<p style="margin-left: 90px; margin-right: 150px; font-size: 120%">
+	1. Trò chơi diễn ra giữa 2 người, một người cầm quân đen, một người cầm quân trắng.
+	Người cầm quân đen đi trước.<br><br>
+	2. Bàn cờ tiêu chuẩn gồm 15 đường kẻ ngang và 15 đường kẻ dọc.
+	Người chơi đặt quân vào giao điểm của hai đường kẻ.<br><br>
+	3. Người chơi đặt được quân sao cho 5 quân cùng màu thẳng hàng theo đường ngang, dọc hay chéo sẽ thắng, 
+		trừ một số ngoại lệ cho Đen.<br><br>
+	4. <b>Điều cấm cho bên Đen</b>: không được đi nước mà tạo ra 2 hàng thẳng có 3 quân đen (double-three),
+	không được đi nước tạo ra 2 hàng thẳng có 4 quân đen (double-four), không được để 6 quân trở đi thẳng hàng. 
+	Nếu vi phạm, Đen sẽ thua ngay lập tức.<br><br>
+	5. Bên trắng không bị hạn chế bất cứ cách thắng nào.<br><br>
+	6. Khi ván đấu bắt đầu, một người được gọi là Đen tạm thời được chọn ra. 
+	Người còn lại là Trắng tạm thời. Tùy vào thể lệ giải đấu, nhưng việc chọn thường là ngẫu nhiên.<br><br>
+	7. Bên Đen tạm thời đặt 2 quân lên bàn cờ, Trắng đặt 1 quân. 
+	Việc đặt quân bị giới hạn trong 26 thế trận tiêu chuẩn định sẵn.<br><br>
+	8.<b> Quyền swap1 </b>: bên Trắng tạm thời được quyền chọn chơi với thế trận của trắng hoặc đen trên bàn cờ.<br><br>
+	9. Người cầm Trắng được đi bất kì ở nước thứ 4.<br><br>
+	10.<b> Quyền swap2 </b> : bên Đen được chọn chơi với thế trận của Trắng, 
+	hoặc tiếp tục chơi với bên Đen nhưng phải đưa ra 2 đề xuất khác nhau cho nước thứ 5. 
+	Khi này, bên Trắng sẽ chọn ra một nước trong đó để trở thành nước đi chính thức.<br><br>
+	11. Các nước đi từ thứ 6 đổ đi được chơi như bình thường (tất nhiên vẫn áp dụng luật cấm cho Đen).
+	
+	</p>
+	<p style="margin-left: 90px; margin-right: 150px; font-size: 100%; color:RED;">
+		<b> Lưu ý :</b> một nước đi trong renju chỉ là việc đi quân của một bên, khác với cờ vua. 
+		Các nước số lẻ là của Đen, và các nước chẵn là của Trắng.
+	
+	</p>
+	<table style="margin: 0 auto; width: 25%; ">
+    <tr>
+        <td style="text-align: center;">
+            <img src="C:\Users\HP\OneDrive\Desktop\nguồn\luật renju.jpg" width="100%">
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center; font-size: 80%; color: gray">
+            <i> Ví dụ các nước double-three phạm luật của Đen </i>
+	</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	
+	<table style="margin: 0 auto; width: 80%; ">
+	<tr>
+	 <td style="text-align: center; font-size: 120%">
+		<b>Câu hỏi: </b>
+	</td>
+	</tr>
+    <tr>
+        <td style="text-align: center;">
+            <img src="C:\Users\HP\OneDrive\Desktop\nguồn\RenjuDouble3.jpg" width="35%">
+        </td>
+    </tr>
+	<tr>
+		 <td style="text-align: center; font-size: 100%">
+		Nước đi X là hợp lệ cho Đen. Đúng hay Sai?<br>
+		</td>
+	</table>
+	<table style="margin: 0 auto; width: 80%; ">
+    <tr>
+         <td style="text-align: center; font-size: 100%;">
+           <button onclick="document.getElementById('o').innerText='Không chính xác'">Đúng</button>
+	
+		</td>
+		 <td style="text-align: center; font-size: 100%">
+		<button onclick="document.getElementById('o').innerText='Đúng rồi'">Sai</button>
+	
+	</td>
+	</tr>
+	</table>
+	<br>
+	<table style="margin: 0 auto; width: 50%; ">
+	<tr>
+	<td style="text-align: center; font-size: 100%;">
+	<div id="o"></div>
+	</td>
+	</tr>
+	</table>
+	<br>
+	<br>
+	<p style="margin-left: 60px; margin-right: 150px; font-size: 90%">
+	<a href="C:\Users\HP\OneDrive\Desktop\nguồn\Trang chủ.html"> >>Trở về trang chủ </a>
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>
